@@ -1,4 +1,7 @@
+import heroImg from "../assets/hero.png";
+import { Link } from "react-router-dom";
 function Home() {
+  
   return (
     <div>
 
@@ -13,17 +16,30 @@ function Home() {
           Providing quality education and shaping future leaders.
         </p>
 
-        <div className="space-x-4">
+        <img
+  src={heroImg}
+  alt="Iganga Dynamic Secondary School"
+  className="mx-auto mt-8 rounded-lg shadow-lg w-full max-w-4xl"
+/>
 
-          <button className="bg-white text-blue-700 px-6 py-3 rounded font-semibold">
-            Apply Now
-          </button>
+        <div className="space-x-4 mt-6">
 
-          <button className="border border-white px-6 py-3 rounded font-semibold">
-            Learn More
-          </button>
+  <Link
+    to="/admissions"
+    className="bg-white text-blue-700 px-6 py-3 rounded font-semibold"
+  >
+    Apply Now
+  </Link>
 
-        </div>
+
+  <Link
+    to="/about"
+    className="border border-white px-6 py-3 rounded font-semibold"
+  >
+    Learn More
+  </Link>
+
+</div>
 
       </section>
 
