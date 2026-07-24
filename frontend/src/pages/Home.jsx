@@ -2,40 +2,78 @@ function Home() {
   return (
     <div>
 
-      <section>
-        <h1>
+      {/* Hero Section */}
+      <section className="bg-blue-700 text-white px-8 py-20 text-center">
+
+        <h1 className="text-5xl font-bold mb-4">
           Welcome to Iganga Dynamic Secondary School
         </h1>
 
-        <p>
+        <p className="text-xl mb-6">
           Providing quality education and shaping future leaders.
         </p>
 
-        <p>
-          Iganga Dynamic Secondary School is committed to
-          nurturing students academically, morally, and socially
-          to prepare them for a successful future.
+        <div className="space-x-4">
+
+          <button className="bg-white text-blue-700 px-6 py-3 rounded font-semibold">
+            Apply Now
+          </button>
+
+          <button className="border border-white px-6 py-3 rounded font-semibold">
+            Learn More
+          </button>
+
+        </div>
+
+      </section>
+
+
+      {/* Introduction Section */}
+      <section className="px-8 py-12 text-center">
+
+        <h2 className="text-3xl font-bold mb-4">
+          About Our School
+        </h2>
+
+        <p className="max-w-3xl mx-auto">
+          Iganga Dynamic Secondary School is committed to providing
+          quality education in a supportive environment where students
+          develop academically, socially, and morally.
         </p>
 
       </section>
 
 
-      <section>
-        <h2>Our Vision</h2>
-        <p>
-          To provide quality education and develop responsible
-          future leaders.
-        </p>
-      </section>
+      {/* Vision and Mission */}
+      <section className="grid md:grid-cols-2 gap-8 px-8 py-12">
+
+        <div className="shadow-lg p-6 rounded">
+
+          <h2 className="text-2xl font-bold mb-3">
+            Our Vision
+          </h2>
+
+          <p>
+            To provide quality education and nurture responsible
+            future leaders.
+          </p>
+
+        </div>
 
 
-      <section>
-        <h2>Our Mission</h2>
-        <p>
-          To offer a supportive learning environment that
-          promotes academic excellence, discipline, and
-          personal growth.
-        </p>
+        <div className="shadow-lg p-6 rounded">
+
+          <h2 className="text-2xl font-bold mb-3">
+            Our Mission
+          </h2>
+
+          <p>
+            To promote academic excellence, discipline, and
+            character development among learners.
+          </p>
+
+        </div>
+
       </section>
 
 
