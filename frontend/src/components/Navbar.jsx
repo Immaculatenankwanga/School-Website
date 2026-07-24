@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar(props) {
   return (
     <nav className="bg-blue-700 text-white px-6 py-4 flex justify-between items-center">
@@ -7,13 +9,47 @@ function Navbar(props) {
       </h2>
 
       <ul className="flex gap-6">
-        <li className="hover:text-blue-200 cursor-pointer">Home</li>
-        <li className="hover:text-blue-200 cursor-pointer">About</li>
-        <li className="hover:text-blue-200 cursor-pointer">Academics</li>
-        <li className="hover:text-blue-200 cursor-pointer">Admissions</li>
-        <li className="hover:text-blue-200 cursor-pointer">News</li>
-        <li className="hover:text-blue-200 cursor-pointer">Gallery</li>
-        <li className="hover:text-blue-200 cursor-pointer">Contact</li>
+        <li>
+          <Link className="hover:text-blue-200" to="/">
+            Home
+          </Link>
+        </li>
+
+        <li>
+          <Link className="hover:text-blue-200" to="/about">
+            About
+          </Link>
+        </li>
+
+        <li>
+          <Link className="hover:text-blue-200" to="/academics">
+            Academics
+          </Link>
+        </li>
+
+        <li>
+          <Link className="hover:text-blue-200" to="/admissions">
+            Admissions
+          </Link>
+        </li>
+
+        <li>
+          <Link className="hover:text-blue-200" to="/news">
+            News
+          </Link>
+        </li>
+
+        <li>
+          <Link className="hover:text-blue-200" to="/gallery">
+            Gallery
+          </Link>
+        </li>
+
+        <li>
+          <Link className="hover:text-blue-200" to="/contact">
+            Contact
+          </Link>
+        </li>
       </ul>
 
     </nav>
